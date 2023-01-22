@@ -2,11 +2,13 @@ import  { React,useContext, useState } from 'react';
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
+import useTitle from '../../Hooks/useTitle';
 import useToken from '../../Hooks/useToken';
 
 const Login = () => {
 
 
+  useTitle('Login')
     const {login} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();

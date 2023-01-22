@@ -1,4 +1,5 @@
 import React from 'react';
+import useTitle from '../../../Hooks/useTitle';
 import ContactUs from '../../ContactUs/ContactUs';
 import Banner from '../Banner/Banner';
 import Exceptional from '../Exceptional/Exceptional';
@@ -8,6 +9,7 @@ import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <Banner></Banner>
